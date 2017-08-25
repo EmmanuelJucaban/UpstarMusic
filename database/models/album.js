@@ -1,6 +1,13 @@
 // Todo: create Album Schema
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
- const Album = new mongoose.Schema({
-   title: String
+ const AlbumSchema = new mongoose.Schema({
+   title: String,
+   date: Date,
+   copiesSold: Number,
+   numberTracks: Number,
+   image: String,
+   revenue: Number
  });
+
+export default AlbumSchema;
