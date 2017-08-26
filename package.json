@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "start electron . && webpack-dev-server"
+    "start-windows": "start electron . && webpack-dev-server",
+    "start-mac": "electron . & webpack-dev-server"
   },
   "author": "",
   "license": "ISC",

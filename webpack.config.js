@@ -29,11 +29,7 @@ module.exports = {
     loaders: [
       {
         exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'env'],
-          "plugins": ["transform-object-rest-spread"]
-        }
+        loader: 'babel'
       },
       {
         test: /\.sass$/,
