@@ -10,13 +10,13 @@ module.exports = () => {
     .find({})
     .sort({yearsActive: 1})
     .limit(1)
-    .then(artists => artists[0]);
+    .then(artists => artists[0].yearsActive);
 
   const maxQuery = Artist
     .find({})
     .sort({yearsActive: -1})
     .limit(1)
-    .then(artists => artists[0]);
+    .then(artists => artists[0].yearsActive);
 
   return Promise.all([minQuery, maxQuery])
     .then((results) => {
